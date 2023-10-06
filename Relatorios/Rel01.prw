@@ -58,4 +58,12 @@ Static Function fReportDef()
         {"QRY_REP"})
     oSection:SetTotalInLine(.F.)
 
+    //Colunas no relatório
+    TRCell():New(oSection, "B1_COD", "QRY_REP", "Codigo", /*cPicture*/, 15, /*Pixel*/, /*code-block de impressao*/, "LEFT", /*LineBreak*/, "LEFT",/*CellBreak*/,/*nColSpace*/,/*AutoSize*/,/*nClrBack*/,/*nClrFore*/,.F.)
+    TRCell():New(oSection, "B1_DESC", "QRY_REP", "Descrição", /*cPicture*/, 30, /*Pixel*/, /*code-block de impressao*/, "LEFT", /*LineBreak*/, "LEFT",/*CellBreak*/,/*nColSpace*/,/*AutoSize*/,/*nClrBack*/,/*nClrFore*/,.F.)
+    TRCell():New(oSection, "B1_TIPO", "QRY_REP", "Tipo", /*cPicture*/, 02, /*Pixel*/, /*code-block de impressao*/, "LEFT", /*LineBreak*/, "LEFT",/*CellBreak*/,/*nColSpace*/,/*AutoSize*/,/*nClrBack*/,/*nClrFore*/,.F.)
+    TRCell():New(oSection, "TIPODESCR", "QRY_REP", "Tp.Descr", /*cPicture*/, 55, /*Pixel*/, /*code-block de impressao*/, "LEFT", /*LineBreak*/, "LEFT",/*CellBreak*/,/*nColSpace*/,/*AutoSize*/,/*nClrBack*/,/*nClrFore*/,.F.)
+    TRCell():New(oSection, "B1_UM", "QRY_REP", "Unid. Med", /*cPicture*/, 02, /*Pixel*/, /*code-block de impressao*/, "LEFT", /*LineBreak*/, "LEFT",/*CellBreak*/,/*nColSpace*/,/*AutoSize*/,/*nClrBack*/,/*nClrFore*/,.F.)
+    TRCell():New(oSection, "UMDESCR", "QRY_REP", "UM. Descr.", /*cPicture*/, 40, /*Pixel*/, /*code-block de impressao*/, "LEFT", /*LineBreak*/, "LEFT",/*CellBreak*/,/*nColSpace*/,/*AutoSize*/,/*nClrBack*/,/*nClrFore*/,.F.)
+
 Return oReport
